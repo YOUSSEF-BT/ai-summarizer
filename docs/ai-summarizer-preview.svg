@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Ai Summarizer interface preview</title>
+  <desc id="desc">Promotional preview of the Ai Summarizer web interface with a dark blue layout, summary form, and feature cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#123957"/>
+      <stop offset="1" stop-color="#071829"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="1070" y1="160" x2="1500" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2d4962" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#0e2137" stop-opacity=".98"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="200" y1="120" x2="680" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a4a72" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#08192a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#103450"/>
+      <stop offset="1" stop-color="#0b2238"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7bc8f4"/>
+      <stop offset="1" stop-color="#74caf5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#061320" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <circle cx="220" cy="190" r="210" fill="url(#soft)"/>
+  <circle cx="1210" cy="660" r="280" fill="#123b5c" fill-opacity=".26"/>
+
+  <g transform="translate(150 70)">
+    <rect width="72" height="72" rx="20" fill="#0d2440"/>
+    <path d="M18 28c0-5.523 4.477-10 10-10h14c7.007 0 13.35 2.796 18 7.334C64.65 20.796 70.993 18 78 18h4c5.523 0 10 4.477 10 10v28c0 5.523-4.477 10-10 10h-4c-7.007 0-13.35 2.796-18 7.334C55.35 68.796 49.007 66 42 66H28c-5.523 0-10-4.477-10-10V28Z" transform="scale(.72) translate(8 6)" fill="#ffffff"/>
+    <path d="M53 26v37" stroke="#0b1727" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M18 28c0-5.523 4.477-10 10-10h14c7.007 0 13.35 2.796 18 7.334C64.65 20.796 70.993 18 78 18h4c5.523 0 10 4.477 10 10v28c0 5.523-4.477 10-10 10h-4c-7.007 0-13.35 2.796-18 7.334C55.35 68.796 49.007 66 42 66H28c-5.523 0-10-4.477-10-10V28Z" transform="scale(.72) translate(8 6)" stroke="#0b1727" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M27 34h14M27 42h14M27 50h10M60 34h13M60 42h13M60 50h9" stroke="#0b1727" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="65" cy="23" r="11" fill="#dff6ff" stroke="#0b1727" stroke-width="3.2"/>
+    <path d="M72.5 30.5 79 37" stroke="#0b1727" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M74 39l4 4" stroke="#7dd3fc" stroke-width="4.2" stroke-linecap="round"/>
+  </g>
+
+  <text x="240" y="87" fill="#6fc7f5" font-size="18" letter-spacing="8" font-family="system-ui, -apple-system, sans-serif" font-weight="700">YOUSSEF BOUZIT</text>
+  <text x="240" y="129" fill="#ffffff" font-size="34" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Ai Summarizer</text>
+
+  <g transform="translate(1360 60)">
+    <circle cx="30" cy="30" r="23" fill="#ffffff"/>
+    <circle cx="42" cy="21" r="23" fill="#123957"/>
+  </g>
+
+  <g transform="translate(150 190)">
+    <rect width="410" height="54" rx="27" fill="#0f314f" fill-opacity=".85"/>
+    <text x="28" y="36" fill="#f5fbff" font-size="18" font-family="system-ui, -apple-system, sans-serif">✦  AI-powered summaries for articles and documents</text>
+  </g>
+
+  <text x="150" y="330" fill="#ffffff" font-size="74" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Summarize long</text>
+  <text x="150" y="408" fill="#ffffff" font-size="74" font-family="system-ui, -apple-system, sans-serif" font-weight="700">content into sharp,</text>
+  <text x="150" y="486" fill="#ffffff" font-size="74" font-family="system-ui, -apple-system, sans-serif" font-weight="700">readable insights.</text>
+
+  <text x="150" y="560" fill="#bdd5e5" font-size="24" font-family="system-ui, -apple-system, sans-serif">Paste a URL or upload a document to generate a clean summary,</text>
+  <text x="150" y="602" fill="#bdd5e5" font-size="24" font-family="system-ui, -apple-system, sans-serif">key points, quick metrics, translation, and audio playback in one</text>
+  <text x="150" y="644" fill="#bdd5e5" font-size="24" font-family="system-ui, -apple-system, sans-serif">focused workflow.</text>
+
+  <g transform="translate(150 690)">
+    <g>
+      <rect width="198" height="95" rx="24" fill="#0d2f4c" filter="url(#shadow)"/>
+      <text x="22" y="35" fill="#cfe9fa" font-size="13" letter-spacing="5" font-family="system-ui, -apple-system, sans-serif">URL ARTICLES</text>
+      <text x="22" y="67" fill="#ffffff" font-size="20" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Public pages</text>
+    </g>
+    <g transform="translate(216 0)">
+      <rect width="218" height="95" rx="24" fill="#0d2f4c" filter="url(#shadow)"/>
+      <text x="22" y="35" fill="#cfe9fa" font-size="13" letter-spacing="5" font-family="system-ui, -apple-system, sans-serif">DOCUMENT UPLOAD</text>
+      <text x="22" y="67" fill="#ffffff" font-size="20" font-weight="700" font-family="system-ui, -apple-system, sans-serif">PDF, DOC, DOCX</text>
+    </g>
+    <g transform="translate(452 0)">
+      <rect width="218" height="95" rx="24" fill="#0d2f4c" filter="url(#shadow)"/>
+      <text x="22" y="35" fill="#cfe9fa" font-size="13" letter-spacing="5" font-family="system-ui, -apple-system, sans-serif">OUTPUT STYLE</text>
+      <text x="22" y="67" fill="#ffffff" font-size="20" font-weight="700" font-family="system-ui, -apple-system, sans-serif">Summary + key points</text>
+    </g>
+  </g>
+
+  <g transform="translate(150 805)">
+    <g>
+      <rect width="215" height="70" rx="22" fill="url(#panel)" fill-opacity=".92"/>
+      <text x="24" y="30" fill="#8fd7ff" font-size="12" letter-spacing="2.5" font-family="system-ui, -apple-system, sans-serif">SOURCE-READY</text>
+      <text x="24" y="53" fill="#d3e7f4" font-size="16" font-family="system-ui, -apple-system, sans-serif">URLs, PDFs and Word docs</text>
+    </g>
+    <g transform="translate(235 0)">
+      <rect width="215" height="70" rx="22" fill="url(#panel)" fill-opacity=".92"/>
+      <text x="24" y="30" fill="#8fd7ff" font-size="12" letter-spacing="2.5" font-family="system-ui, -apple-system, sans-serif">READABLE OUTPUT</text>
+      <text x="24" y="53" fill="#d3e7f4" font-size="16" font-family="system-ui, -apple-system, sans-serif">Clean summaries and key points</text>
+    </g>
+    <g transform="translate(470 0)">
+      <rect width="215" height="70" rx="22" fill="url(#panel)" fill-opacity=".92"/>
+      <text x="24" y="30" fill="#8fd7ff" font-size="12" letter-spacing="2.5" font-family="system-ui, -apple-system, sans-serif">GLOBAL ACCESS</text>
+      <text x="24" y="53" fill="#d3e7f4" font-size="16" font-family="system-ui, -apple-system, sans-serif">Translation and audio playback</text>
+    </g>
+  </g>
+
+  <g transform="translate(970 155)" filter="url(#shadow)">
+    <rect width="470" height="650" rx="34" fill="url(#glass)" stroke="#1a3957"/>
+    <text x="40" y="56" fill="#6fc7f5" font-size="18" letter-spacing="7" font-family="system-ui, -apple-system, sans-serif" font-weight="700">START A NEW SUMMARY</text>
+    <text x="40" y="114" fill="#ffffff" font-size="42" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Choose a source and</text>
+    <text x="40" y="160" fill="#ffffff" font-size="42" font-family="system-ui, -apple-system, sans-serif" font-weight="700">generate the result.</text>
+    <text x="40" y="206" fill="#b6cfdf" font-size="19" font-family="system-ui, -apple-system, sans-serif">Switch between article mode and document mode</text>
+    <text x="40" y="236" fill="#b6cfdf" font-size="19" font-family="system-ui, -apple-system, sans-serif">depending on what you want to summarize.</text>
+
+    <g transform="translate(48 282)">
+      <rect width="254" height="66" rx="33" fill="#335a7b"/>
+      <text x="66" y="41" fill="#ffffff" font-size="18" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Article URL</text>
+      <text x="332" y="41" fill="#ffffff" font-size="18" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Document</text>
+    </g>
+
+    <g transform="translate(40 392)">
+      <rect width="390" height="182" rx="28" fill="#0c2440" stroke="#7d98af" stroke-width="1.6"/>
+      <text x="28" y="42" fill="#ffffff" font-size="18" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Paste an article URL</text>
+      <text x="28" y="78" fill="#a7c0d2" font-size="16" font-family="system-ui, -apple-system, sans-serif">Paste a public article, blog post or news story</text>
+      <rect x="28" y="116" width="334" height="64" rx="24" fill="#10304d"/>
+      <text x="52" y="156" fill="#bcd5e5" font-size="16" font-family="system-ui, -apple-system, sans-serif">https://example.com/article</text>
+    </g>
+
+    <g transform="translate(40 608)">
+      <rect width="390" height="72" rx="26" fill="url(#button)"/>
+      <text x="106" y="45" fill="#05243d" font-size="22" font-family="system-ui, -apple-system, sans-serif" font-weight="700">Summarize article</text>
+    </g>
+  </g>
+</svg>

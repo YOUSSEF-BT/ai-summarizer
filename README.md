@@ -1,34 +1,49 @@
 # Ai Summarizer
 
-AI-powered article and document summarizer built with React, Express, and Gemini.
+<p align="center">
+  <img src="./docs/ai-summarizer-preview.svg" alt="Ai Summarizer preview" width="100%" />
+</p>
 
-Ai Summarizer lets you:
-- summarize public article URLs
-- upload and summarize `PDF`, `DOC`, and `DOCX` files
-- translate the generated summary
-- listen to the summary with text-to-speech
-- view key points and compression metrics
+<p align="center">
+  <strong>AI-powered summarization for articles, PDFs, and Word documents.</strong>
+</p>
+
+<p align="center">
+  Ai Summarizer turns long-form content into clean summaries, key points, quick metrics, translation output, and audio-ready text in one focused workflow.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61dafb?style=flat-square&logo=react&logoColor=061826" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Express-API-111827?style=flat-square&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/Gemini-AI-7dd3fc?style=flat-square" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Vercel-Ready-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/License-MIT-0f172a?style=flat-square" alt="MIT License" />
+</p>
 
 ## Overview
 
-This project is a production-style MVP focused on a simple user flow:
+Ai Summarizer is a full-stack web application designed to simplify content digestion. It supports both public article URLs and uploaded documents, then produces a structured output that is easier to read, translate, and reuse.
+
+The experience is built around a simple flow:
 1. choose a source
 2. generate a summary
-3. review key points
+3. review the key points and metrics
 4. translate or listen to the result
 
-The app uses Gemini when a valid `GEMINI_API_KEY` is available and falls back to a local summarization strategy when Gemini is unavailable.
+When a valid `GEMINI_API_KEY` is available, the app uses Gemini for higher-quality summarization. If Gemini is unavailable, the backend falls back to a local summarization strategy so the product remains usable.
 
-## Features
+## Core Features
 
-- URL summarization for public article pages
-- file summarization for `PDF`, `DOC`, and `DOCX`
-- improved article extraction with `Readability` and `jsdom`
-- summary + key points output
-- language translation
-- text-to-speech playback
-- sky-blue custom UI with dark mode
-- Vercel-ready API structure
+| Capability | Details |
+|---|---|
+| URL summarization | Summarizes public article pages and blog posts |
+| Document upload | Supports `PDF`, `DOC`, and `DOCX` files |
+| Structured output | Returns a summary, key points, and compression metrics |
+| Translation | Lets users translate the generated summary |
+| Audio playback | Supports text-to-speech directly in the interface |
+| Content extraction | Uses `Readability` and `jsdom` to improve article parsing |
+| Deployment-ready | Configured for local production builds and Vercel deployment |
 
 ## Tech Stack
 
@@ -41,7 +56,7 @@ The app uses Gemini when a valid `GEMINI_API_KEY` is available and falls back to
 - Gemini API
 - Vercel serverless API handlers
 
-## Local Setup
+## Local Development
 
 ### 1. Install dependencies
 
@@ -49,13 +64,13 @@ The app uses Gemini when a valid `GEMINI_API_KEY` is available and falls back to
 npm install
 ```
 
-### 2. Create your environment file
+### 2. Create the environment file
 
 ```bash
 cp .env.example .env
 ```
 
-Then update `.env`:
+Update `.env` with your values:
 
 ```env
 GEMINI_API_KEY=your_real_gemini_api_key
@@ -65,7 +80,7 @@ GEMINI_MODEL=gemini-1.5-flash
 MAX_CONTENT_LENGTH=30000
 ```
 
-### 3. Start the project
+### 3. Start the development server
 
 ```bash
 npm run dev
@@ -77,14 +92,16 @@ Open:
 http://127.0.0.1:5001
 ```
 
-## Build
+## Production Build
+
+Run the checks and production build:
 
 ```bash
 npm run check
 npm run build
 ```
 
-To run the production server locally:
+Start the built server locally:
 
 ```bash
 npm start
@@ -95,8 +112,8 @@ npm start
 | Variable | Required | Description |
 |---|---:|---|
 | `GEMINI_API_KEY` | Yes | Gemini API key from Google AI Studio |
-| `GEMINI_MODEL` | No | Gemini model name, default is `gemini-1.5-flash` |
-| `MAX_CONTENT_LENGTH` | No | Maximum article length sent to Gemini |
+| `GEMINI_MODEL` | No | Gemini model name, default: `gemini-1.5-flash` |
+| `MAX_CONTENT_LENGTH` | No | Maximum content length sent to Gemini |
 | `PORT` | No | Local server port |
 | `NODE_ENV` | No | Runtime mode |
 
@@ -128,44 +145,23 @@ shared/
   schema.ts
 ```
 
-## Deploy On GitHub
+## Deploy on Vercel
 
-Important:
-- do not push `.env`
-- keep your real API key private
-- commit only `.env.example`
-
-Your project already ignores `.env` in [`.gitignore`](./.gitignore).
-
-Set your GitHub repository as the `origin` remote:
-
-```bash
-git remote remove origin
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-```
-
-Then push:
-
-```bash
-git add .
-git commit -m "Initial Ai Summarizer release"
-git branch -M main
-git push -u origin main
-```
-
-## Deploy On Vercel
+This project is already configured for Vercel.
 
 ### Option 1. Import from GitHub
 
-1. Push the project to your GitHub repository
-2. Import the repository into Vercel
-3. Vercel will run:
+1. Push the project to your GitHub repository.
+2. Import the repository into Vercel.
+3. Use these project settings if Vercel asks:
 
-```bash
-npm run build
+```text
+Build Command: npm run build
+Output Directory: dist/public
+Install Command: npm install
 ```
 
-4. Make sure these environment variables are added in the Vercel dashboard:
+4. Add these environment variables in the Vercel dashboard:
 
 ```text
 GEMINI_API_KEY
@@ -182,24 +178,20 @@ vercel
 
 Then add the same environment variables in Vercel.
 
-Vercel docs:
-- https://vercel.com/docs/deployments/git/vercel-for-github
-- https://vercel.com/docs/environment-variables
-
 ## Notes
 
-- If `GEMINI_API_KEY` is invalid, the app falls back to a local summarizer
-- Some websites may block scraping or return limited content
-- A few article pages may still need extractor tuning depending on site structure
-
-## License
-
-MIT
+- Do not push `.env` to GitHub.
+- Some websites may restrict scraping or return partial content.
+- If `GEMINI_API_KEY` is invalid, the app falls back to a local summarizer.
 
 ## Author
 
-Youssef Bouzit
+**Youssef Bouzit**
 
 - GitHub: https://github.com/YOUSSEF-BT
 - LinkedIn: https://www.linkedin.com/in/youssef-bouzit-74863239b/
 - Email: bt.youssef.369@gmail.com
+
+## License
+
+MIT
